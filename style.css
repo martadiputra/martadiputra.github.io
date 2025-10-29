@@ -1,0 +1,27 @@
+/* --- Styling Foto Profil di Home --- */
+
+.profile-picture {
+    width: 180px;  /* Lebar foto */
+    height: 180px; /* Tinggi foto */
+
+    /* INI KUNCINYA: membuat jadi bulat sempurna */
+    border-radius: 50%;
+
+    object-fit: cover; /* Memastikan foto tidak gepeng/terdistorsi */
+    margin-bottom: 20px; /* Jarak ke teks di bawahnya */
+
+    /* (Opsional) Efek border agar lebih menonjol */
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* (Opsional) Kita atur ulang sedikit tagline di bawah H1 */
+.hero .tagline {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px; /* Sedikit lebih dekat ke H1 */
+    margin-bottom: 30px; /* Jarak ke tombol CTA */
+}
